@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Page"
+        android:id="@+id/page"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/title"
+        android:layout_toEndOf="@+id/title"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book1"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:hint="Enter name of book"
+        android:layout_marginLeft="20dp"
+        android:width="265dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book2"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book1"
+        android:layout_alignLeft="@+id/book1"
+        android:layout_alignStart="@+id/book1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book3"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book2"
+        android:layout_alignLeft="@+id/book2"
+        android:layout_alignStart="@+id/book2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book4"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book3"
+        android:layout_alignLeft="@+id/book3"
+        android:layout_alignStart="@+id/book3"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book5"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book4"
+        android:layout_alignLeft="@+id/book4"
+        android:layout_alignStart="@+id/book4"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book6"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book5"
+        android:layout_alignLeft="@+id/book5"
+        android:layout_alignStart="@+id/book5"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book7"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book6"
+        android:layout_alignLeft="@+id/book6"
+        android:layout_alignStart="@+id/book6"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book8"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book7"
+        android:layout_alignLeft="@+id/book7"
+        android:layout_alignStart="@+id/book7"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/book9"
+        android:hint="Enter name of book"
+        android:width="265dp"
+        android:layout_below="@+id/book8"
+        android:layout_alignLeft="@+id/book8"
+        android:layout_alignStart="@+id/book8"/>
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/book10"-->
+        <!--android:hint="Enter name of book"-->
+        <!--android:width="265dp"-->
+        <!--android:layout_below="@+id/book9"-->
+        <!--android:layout_alignLeft="@+id/book9"-->
+        <!--android:layout_alignStart="@+id/book9"/>-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/book11"-->
+        <!--android:hint="Enter name of book"-->
+        <!--android:width="265dp"-->
+        <!--android:layout_below="@+id/book10"-->
+        <!--android:layout_alignLeft="@+id/book10"-->
+        <!--android:layout_alignStart="@+id/book10"/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page1"
+        android:layout_below="@+id/page"
+        android:layout_alignLeft="@+id/page"
+        android:layout_alignStart="@+id/page"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page2"
+        android:layout_below="@+id/page1"
+        android:layout_alignLeft="@+id/page"
+        android:layout_alignStart="@+id/page"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page3"
+        android:layout_toEndOf="@+id/book2"
+        android:layout_below="@+id/page2"
+        android:layout_alignLeft="@+id/page2"
+        android:layout_alignStart="@+id/page2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page4"
+        android:layout_toEndOf="@+id/book4"
+        android:layout_above="@+id/book5"
+        android:layout_alignLeft="@+id/page3"
+        android:layout_alignStart="@+id/page3"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page5"
+        android:layout_toEndOf="@+id/book5"
+        android:layout_above="@+id/book6"
+        android:layout_alignLeft="@+id/page4"
+        android:layout_alignStart="@+id/page4"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page6"
+        android:layout_toEndOf="@+id/book6"
+        android:layout_above="@+id/book7"
+        android:layout_alignLeft="@+id/page5"
+        android:layout_alignStart="@+id/page5"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page7"
+        android:layout_toEndOf="@+id/book6"
+        android:layout_alignTop="@+id/book7"
+        android:layout_alignLeft="@+id/page6"
+        android:layout_alignStart="@+id/page6"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page8"
+        android:layout_toEndOf="@+id/book7"
+        android:layout_alignTop="@+id/book8"
+        android:layout_alignLeft="@+id/page7"
+        android:layout_alignStart="@+id/page7"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/page9"
+        android:layout_toEndOf="@+id/book8"
+        android:layout_alignTop="@+id/book9"
+        android:layout_alignLeft="@+id/page8"
+        android:layout_alignStart="@+id/page8"/>
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="number"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/page10"-->
+        <!--android:layout_toEndOf="@+id/book10"-->
+        <!--android:layout_alignTop="@+id/book10"-->
+        <!--android:layout_alignLeft="@+id/page9"-->
+        <!--android:layout_alignStart="@+id/page9"/>-->
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="number"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/page11"-->
+        <!--android:layout_toEndOf="@+id/book11"-->
+        <!--android:layout_alignTop="@+id/book11"-->
+        <!--android:layout_alignLeft="@+id/page10"-->
+        <!--android:layout_alignStart="@+id/page10"/>-->
+
+</RelativeLayout>
+
+

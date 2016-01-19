@@ -19,6 +19,7 @@ public class BookmarkStart extends AppCompatActivity {
         mNewListButton = (Button)findViewById(R.id.newListButton);
 
         // when new list button is clicked, take user to new list page
+        // This currently doesn't work, get a weird error?
         mNewListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

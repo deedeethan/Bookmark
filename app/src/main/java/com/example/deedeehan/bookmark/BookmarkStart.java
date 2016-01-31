@@ -17,9 +17,7 @@ public class BookmarkStart extends AppCompatActivity {
         setContentView(R.layout.activity_bookmark_start);
 
         mNewListButton = (Button)findViewById(R.id.newListButton);
-
-        // when new list button is clicked, take user to new list page
-        // This currently doesn't work, get a weird error?
+        
         mNewListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +28,15 @@ public class BookmarkStart extends AppCompatActivity {
         // add new list titles to this page
         // have buttons on saved lists page that take user to the list he/she   clicked on?
         // if so, need a way to save each page separately
+
+        mSavedListsButton = (Button)findViewById(R.id.savedListsButton);
+
+        mSavedListsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                savedLists();
+            }
+        });
     }
 
     private void newList() {
@@ -38,4 +45,8 @@ public class BookmarkStart extends AppCompatActivity {
         // need more here?
     }
 
+    private void savedLists() {
+        Intent intent = new Intent(this, SavedListsPage.class);
+        startActivity(intent);
+    }
 }

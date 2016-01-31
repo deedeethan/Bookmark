@@ -19,7 +19,12 @@
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.deedeehan.bookmark.BookmarkStart" />
+                android:value="com.example.deedeehan.bookmark.BookmarkStart"/>
+        </activity>
+        <activity
+            android:name=".SavedListsPage"
+            android:label="@string/title_activity_saved_lists_page"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

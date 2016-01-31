@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bookmark</string>
+    <string name="title_activity_saved_lists_page">SavedListsPage</string>
 </resources>

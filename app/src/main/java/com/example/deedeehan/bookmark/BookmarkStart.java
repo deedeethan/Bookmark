@@ -33,7 +33,7 @@ public class BookmarkStart extends AppCompatActivity {
     }
 
     private void newList() {
-        Intent intent = new Intent(this, BookmarkStart.class);
+        Intent intent = new Intent(this, NewListPage.class);
         startActivity(intent);
         // need more here?
     }

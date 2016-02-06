@@ -30,6 +30,7 @@ public class NewListPage extends Activity {
         mSaveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // instead of popupwindow, use dialogfragment
                 PopupWindow title = new PopupWindow();
 
             }

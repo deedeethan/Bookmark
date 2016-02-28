@@ -1,6 +1,7 @@
 package com.example.deedeehan.bookmark;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,7 +10,7 @@ import android.widget.Toast;
 
 import com.example.deedeehan.bookmark.R;
 
-public class NewListPage extends Activity implements ListDialogFragmentListener {
+public class NewListPage extends Activity implements ListDialogFragment.ListDialogListener {
 
     // each new list will have this format, so maybe a newList page should be a class
     // without a layout?
@@ -32,15 +33,27 @@ public class NewListPage extends Activity implements ListDialogFragmentListener 
             @Override
             public void onClick(View v) {
                 // instead of popupwindow, use dialogfragment
-                PopupWindow title = new PopupWindow();
+                showNoticeDialog();
 
             }
         });
     }
 
+    public void showNoticeDialog() {
+        // Create an instance of the dialog fragment and show it
+        DialogFragment dialog = new ListDialogFragment();
+        dialog.show(getFragmentManager(), "ListDialogFragment");
+    }
+
+
     @Override
-    public void onFinishEditDialog(String inputText) {
-        Toast.makeText(this, "Hi, " + inputText, Toast.LENGTH_SHORT).show();
+    public void onDialogPositiveClick(DialogFragment dialog, String name) {
+
+    }
+
+    @Override
+    public void onDialogNegativeClick(DialogFragment dialog) {
+        dialog.dismiss();
     }
 
 }

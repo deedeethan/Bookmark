@@ -5,10 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupWindow;
+import android.widget.Toast;
 
 import com.example.deedeehan.bookmark.R;
 
-public class NewListPage extends Activity {
+public class NewListPage extends Activity implements ListDialogFragmentListener {
 
     // each new list will have this format, so maybe a newList page should be a class
     // without a layout?
@@ -35,6 +36,11 @@ public class NewListPage extends Activity {
 
             }
         });
+    }
+
+    @Override
+    public void onFinishEditDialog(String inputText) {
+        Toast.makeText(this, "Hi, " + inputText, Toast.LENGTH_SHORT).show();
     }
 
 }

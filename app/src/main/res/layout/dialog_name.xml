@@ -3,15 +3,32 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/name"
-            android:hint="Enter name"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:width="220dp"
-            android:layout_marginLeft="50dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Enter name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="220dp"
+        android:layout_marginLeft="50dp"/>
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:id="@+id/okButton"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="0dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="200dp" />
 
-    </LinearLayout>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/cancelButton"
+        android:layout_below="@+id/name" />
+
+</LinearLayout>

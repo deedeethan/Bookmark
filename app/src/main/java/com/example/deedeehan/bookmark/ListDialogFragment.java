@@ -50,8 +50,7 @@ public class ListDialogFragment extends DialogFragment implements TextView.OnEdi
         try {
             // Instantiate the NoticeDialogListener so we can send events to the host
             mListener = (ListDialogListener) activity;
-            mEditText = (EditText) mEditText.findViewById(R.id.name);
-            mEditText.setOnEditorActionListener(this);
+
         } catch (ClassCastException e) {
             // The activity doesn't implement the interface, throw exception
             throw new ClassCastException(activity.toString()
@@ -63,9 +62,15 @@ public class ListDialogFragment extends DialogFragment implements TextView.OnEdi
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         Context context = getActivity();
 
+        LayoutInflater inflater = getActivity().getLayoutInflater();
+
+        View view = inflater.inflate(R.layout.dialog_name, null, false);
+        mEditText = (EditText) view.findViewById(R.id.name);
+        mEditText.setOnEditorActionListener(this);
+
         AlertDialog.Builder builder = new AlertDialog.Builder(context)
                 .setTitle("New List")
-                .setView(mEditText)
+                .setView(inflater.inflate(R.layout.dialog_name, null))
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         onEditorAction(mEditText, id, new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.getMaxKeyCode()));

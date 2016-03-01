@@ -2,7 +2,9 @@ package com.example.deedeehan.bookmark;
 
 import android.app.Activity;
 import android.app.DialogFragment;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupWindow;
@@ -48,7 +50,10 @@ public class NewListPage extends Activity implements ListDialogFragment.ListDial
 
     @Override
     public void onDialogPositiveClick(DialogFragment dialog, String name) {
-
+        Intent intent = new Intent(this, SavedListsPage.class);
+        startActivity(intent);
+        Log.d("from dialog fragment - ", name);
+        // pass the string to the saved lists page and add a list with that name
     }
 
     @Override

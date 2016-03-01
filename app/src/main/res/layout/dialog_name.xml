@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
@@ -13,22 +14,22 @@
         android:width="220dp"
         android:layout_marginLeft="50dp"/>
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/ok"
-        android:id="@+id/okButton"
-        android:layout_marginTop="100dp"
-        android:layout_below="@+id/name"
-        android:layout_marginLeft="0dp"
-        android:paddingRight="10dp"
-        android:layout_marginRight="200dp" />
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/ok"-->
+        <!--android:id="@+id/okButton"-->
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="@string/cancel"
-        android:id="@+id/cancelButton"
-        android:layout_below="@+id/name" />
+        <!--android:layout_below="@+id/name"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/cancel"-->
+        <!--android:id="@+id/cancelButton"-->
+        <!--android:layout_below="@+id/name"-->
+        <!--android:layout_marginLeft="180dp"/>-->
 
 </LinearLayout>

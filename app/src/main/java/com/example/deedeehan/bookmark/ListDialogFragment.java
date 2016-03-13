@@ -73,7 +73,13 @@ public class ListDialogFragment extends DialogFragment implements TextView.OnEdi
                 .setView(inflater.inflate(R.layout.dialog_name, null))
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        //mEditText.onEditorAction(mEditText, id, new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.getMaxKeyCode()));
+                        if (EditorInfo.IME_ACTION_DONE == id) {
+                            // Return input text back to activity through the implemented listener
+                            mListener.onDialogPositiveClick(ListDialogFragment.this, mEditText.getText().toString());
+                            // Close the dialog and return back to the parent activity
+                            dismiss();
+                        }
+                        //onEditorAction(mEditText, id, new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.getMaxKeyCode()));
                         //mListener.onDialogPositiveClick(ListDialogFragment.this, mEditText.getText().toString());
                     }
                 });

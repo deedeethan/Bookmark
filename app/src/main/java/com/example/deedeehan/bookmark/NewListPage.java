@@ -52,6 +52,7 @@ public class NewListPage extends Activity implements ListDialogFragment.ListDial
     public void onDialogPositiveClick(DialogFragment dialog, String name) {
         Log.d("from dialog fragment - ", name);
         Intent intent = new Intent(this, SavedListsPage.class);
+        intent.putExtra("name of list", name);
         startActivity(intent);
 
         // pass the string to the saved lists page and add a list with that name

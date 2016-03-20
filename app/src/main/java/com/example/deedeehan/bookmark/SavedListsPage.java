@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupWindow;
@@ -18,6 +19,15 @@ public class SavedListsPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_lists_page);
+
+        Intent intent = getIntent();
+        String listName = intent.getStringExtra("name of list");
+        if (listName == null) {
+            listName = "listName";
+        }
+        Log.d("list name", listName);
+
+
 
         mHomeButton = (Button)findViewById(R.id.homeButton);
         // when save button is clicked, pop up asks user to add the name of the list

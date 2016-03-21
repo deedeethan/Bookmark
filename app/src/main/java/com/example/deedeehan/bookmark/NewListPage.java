@@ -50,6 +50,7 @@ public class NewListPage extends Activity implements ListDialogFragment.ListDial
 
     @Override
     public void onDialogPositiveClick(DialogFragment dialog, String name) {
+        assert(false);
         Log.d("from dialog fragment - ", name);
         Intent intent = new Intent(this, SavedListsPage.class);
         intent.putExtra("name of list", name);
